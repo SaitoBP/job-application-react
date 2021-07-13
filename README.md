@@ -18,6 +18,14 @@ Alguns pontos são interessantes de se resaltar
 
 - Como a quantidade de requisições a API é limitada, decidi realizar uma requição pelo insmonia e salvar o JSON para poder montar a aplicação sem a necessidade de refazer o fetch
 
+- Para gerenciar as rotas foi utilizado o react-router-dom
+
+- Para gerenciar as requisições foi utilizado o react-query
+
 ## Frameworks
 
 Foi utilizado o MaterialUI para agilizar a montagem da aplicação, porem os estilos padrões do MaterialUI foram alterados para demonstar a possibilidade de montar uma UI unica mesmo com uma framework
+
+## Considerações finais
+
+Infelizmente não fui capaz de fazer tudo o que gostaria para este teste, mas acredito ter demonstrado o conhecimento de grande parte do desenvolvimento de uma aplicação simples, quanto as estilizações, preferi focar mais na parte logica do que na estetica, por isso a estilização esta deixando a desejar
