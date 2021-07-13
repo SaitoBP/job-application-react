@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import LandingPage from './pages/LandingPage'
+import Routes from './pages/Routes'
 
 ReactDOM.render(
   <React.StrictMode>
-    <LandingPage />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
-);
-
+)
