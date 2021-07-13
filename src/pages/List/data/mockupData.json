@@ -1,0 +1,10 @@
+{
+  "location": {
+    "city": "San Fransciso",
+    "cityCode": "SF",
+    "country": "USA"
+  },
+  "guests": 2,
+  "checkIn": "18-01-2021",
+  "checkOut": "23-01-2021"
+}
