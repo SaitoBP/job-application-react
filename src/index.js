@@ -3,13 +3,9 @@ import ReactDOM from 'react-dom'
 
 import Routes from './pages/Routes'
 
-import { ThemeProvider } from '@material-ui/core/styles'
-
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <Routes />
-    </ThemeProvider>
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 )
