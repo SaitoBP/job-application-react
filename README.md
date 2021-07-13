@@ -14,6 +14,8 @@ Alguns pontos são interessantes de se resaltar
 
 - O README esta sendo escrito em ingles devido ao tempo limite
 
+- A pasta `components` possui um arquivo index.js e um arquivo .jsx, isso serva para poder isolar arquivos que não são necessarios na utilização do component, por exemplo testes, para o desenvolvedor, na hora de montar a UI é importante que os arquivos disponibilizados sejam referentes a UI em si, e não necessariamente a logica por tras
+
 ## Frameworks
 
 Foi utilizado o MaterialUI para agilizar a montagem da aplicação, porem os estilos padrões do MaterialUI foram alterados para demonstar a possibilidade de montar uma UI unica mesmo com uma framework
