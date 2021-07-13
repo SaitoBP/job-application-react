@@ -2,20 +2,21 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
+import useStyles from './useStyles'
+
 const Navbar = () => {
+  const { root, linksContainer, link } = useStyles()
+
   return (
-    <ul>
-      <li>
-        <Link to='/'>Home</Link>
-      </li>
+    <nav className={root}>
+      <Link to='/'>Home</Link>
 
-      <li>
-        <Link to='/list'>List</Link>
-      </li>
+      <Link to='/list'>List</Link>
 
-      <li>Notifications</li>
-      <li>Profile</li>
-    </ul>
+      <span>Notifications</span>
+
+      <span>Profile</span>
+    </nav>
   )
 }
 
