@@ -1,6 +1,4 @@
-import React, { Fragment, useState } from 'react'
-
-import { Route } from 'react-router-dom'
+import React, { useState } from 'react'
 
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
@@ -8,11 +6,9 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 
-import { Navbar } from '../components/Navbar'
+import { Navbar } from '../../components/Navbar'
 
-const Teste = ({ name }) => {
-  return <h1>{name}</h1>
-}
+import useStyles from './useStyles'
 
 const Form = () => {
   const [form, setForm] = useState({
@@ -28,8 +24,6 @@ const Form = () => {
     _e.preventDefault()
 
     console.table(form)
-
-    return <Route path={'/search'} component={Teste} />
   }
 
   const handleChange = ({ target: { name, value } }) =>
@@ -101,15 +95,18 @@ const Form = () => {
 }
 
 const LandingPage = () => {
+  const { root } = useStyles()
+
   return (
-    <Fragment>
-      <Container>
+    <>
+      <Container className={root}>
         <Typography variant='h4'>Find a place that gives you the ultimate calm</Typography>
 
         <Form />
       </Container>
+
       <Navbar />
-    </Fragment>
+    </>
   )
 }
 

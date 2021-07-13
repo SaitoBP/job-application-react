@@ -3,9 +3,15 @@ import ReactDOM from 'react-dom'
 
 import Routes from './pages/Routes'
 
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const queryClient = new QueryClient()
+
 ReactDOM.render(
   <React.StrictMode>
-    <Routes />
+    <QueryClientProvider client={queryClient}>
+      <Routes />
+    </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

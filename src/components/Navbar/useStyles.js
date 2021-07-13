@@ -6,20 +6,12 @@ const useStyles = makeStyles({
     justifyContent: 'space-evenly',
     alignItems: 'center',
 
-    height: '50px',
+    height: '80px',
 
     backgroundColor: '#E3E6EC',
 
     position: 'sticky',
     bottom: '0',
-  },
-
-  linksContainer: {
-    display: 'flex',
-  },
-
-  link: {
-    textDecoration: 'none',
   },
 })
 

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import useStyles from './useStyles'
 
 const Navbar = () => {
-  const { root, linksContainer, link } = useStyles()
+  const { root } = useStyles()
 
   return (
     <nav className={root}>
